@@ -1,8 +1,9 @@
----
-version: '3'
+version: '3.8'
 services:
-  nginx:
-   image: nginx
-   container_name: "ngnix_container"
-   ports:
-   - 8087:80
+  php-apache-environment:
+    container_name: php-apache
+    image: php:8.0-apache
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - 8000:80
