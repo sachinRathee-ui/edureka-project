@@ -1,3 +1,2 @@
-FROM library/tomcat
-COPY . /usr/local/tomcat/webapps
-CMD [ "catalina.sh", "run" ]
+FROM httpd:2.4
+COPY . /usr/local/apache2/htdocs/

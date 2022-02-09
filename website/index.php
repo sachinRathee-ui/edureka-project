@@ -1,6 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html>
+<body>
 
-require 'config.php';
-require 'functions.php';
+<h1>Edureka Examples</h1>
 
-run();
+<?php echo "The Best PHP Examples"; ?>
+</body>
+</html>
