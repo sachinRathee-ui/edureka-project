@@ -13,4 +13,4 @@
     command: sudo systemctl start docker
 
   - name: deploy php application
-    command: docker run -itd -p 8083:8080 sachinrathee/php-webapp:latest
+    command: docker run -itd -p 8081:80 sachinrathee/php-webapp:latest
