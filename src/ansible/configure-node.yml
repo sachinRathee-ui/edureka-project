@@ -1,5 +1,5 @@
 ---
-- host: server
+- hosts: server
   become: true
 
   tasks:
