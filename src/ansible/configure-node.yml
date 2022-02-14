@@ -12,6 +12,9 @@
   - name: start docker service
     command: sudo systemctl start docker
 
+  - name: delete Image
+    command: docker rmi -f sachinrathee/php-webapp
+
   - name: delete existing container
     command: docker rm -f webapp
 
