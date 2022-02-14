@@ -16,4 +16,4 @@
     command: docker rm -f webapp
 
   - name: deploy php application
-    command: docker run -itd --name webapp -p 8081:80 sachinrathee/php-webapp
+    command: docker run -itd --name webapp -p 8081:80 sachinrathee/php-webapp:latest
