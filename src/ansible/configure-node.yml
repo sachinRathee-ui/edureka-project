@@ -12,5 +12,8 @@
   - name: start docker service
     command: sudo systemctl start docker
 
+  - name: delete existing container
+    command: docker rm -f webapp
+    
   - name: deploy php application
     command: docker run -itd --name webapp -p 8081:80 sachinrathee/php-webapp:latest
